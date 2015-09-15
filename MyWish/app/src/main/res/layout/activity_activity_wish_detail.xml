@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.philong.mywish.ActivityWishDetail">
+    <TextView
+        android:id="@+id/txtTitleDetail"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="My Title"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:id="@+id/txtContentDetail"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtTitleDetail"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/txtDateDetail"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Date"
+        android:layout_below="@+id/txtContentDetail"
+        android:layout_alignParentRight="true"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:layout_marginRight="10dp"
+        />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Delete"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtDateDetail"
+        android:layout_marginTop="10dp"
+        android:onClick="btnDelete_Click"
+        />
+
+
+</RelativeLayout>
